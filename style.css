@@ -1,0 +1,94 @@
+:root {
+  --primary-color-pale: hsl(225, 100%, 94%);
+  --primary-color-blue: hsl(245, 75%, 52%);
+  --natural-color-vpale: hsl(225, 100%, 98%);
+  --natural-color-desaturatedblue: hsl(224, 23%, 55%);
+  --natural-color-darkblue: hsl(223, 47%, 23%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--primary-color-pale);
+}
+
+a {
+  text-decoration: none;
+}
+
+.card-container {
+  background-color: white;
+  max-width: 350px;
+  font-family: "Red Hat Display", sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 3rem;
+  border-radius: 15px;
+}
+
+.card-hero-img {
+  border-radius: 15px 15px 0 0;
+}
+
+.card-title {
+  color: var(--natural-color-darkblue);
+  text-align: center;
+  margin: 1.5rem;
+  font-weight: 900;
+  font-size: 1.4rem;
+}
+
+.card-description {
+  text-align: center;
+  font-size: 1rem;
+  padding: 0 3rem 0 3rem;
+  margin-bottom: 2rem;
+  color: var(--natural-color-desaturatedblue);
+}
+
+.plan-container {
+  display: grid;
+  width: 85%;
+  margin: auto;
+  background-color: var(--natural-color-vpale);
+  padding: 1rem;
+  border-radius: 15px;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+.payment-container {
+  background-color: var(--primary-color-blue);
+  width: 85%;
+  margin: auto;
+  margin-top: 1.5rem;
+  border-radius: 10px;
+  padding: 0.8rem;
+  text-align: center;
+}
+
+.card-payment-link {
+  color: #fff;
+  font-weight: 900;
+  font-size: 0.9rem;
+}
+
+.card-cancel-link {
+  font-weight: 900;
+  font-size: 0.9rem;
+  color: var(--natural-color-desaturatedblue);
+}
+
+.cancel-container {
+  padding: 0.8rem;
+  text-align: center;
+  margin: 1rem 0 1rem 0;
+}
+
+.attribution {
+  margin-top: 6rem;
+}
